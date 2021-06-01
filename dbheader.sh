@@ -73,18 +73,18 @@ echo "";
 apt install figlet pv ncurses-utils binutils coreutils wget git zsh termux-api procps gawk exa termux-tools -y &> /dev/null;
 rubygem_d &> /dev/null
 termux-wake-lock;
-if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
+if [ -e $PREFIX/share/figlet/dbareh.flf ]; then
 	echo -e "\e[1;34m[*] \033[32mDBareh.flf figlet font is present\033[0m";
 	sleep 4
 else
-wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
+wget https://raw.githubusercontent.com/dbr1908/dbareh/master/dbareh.flf &> /dev/null;
 sleep 3
-cp Remo773.flf $PREFIX/share/figlet/Remo773.flf;
+cp dbareh.flf $PREFIX/share/figlet/dbareh.flf;
 cp ASCII-Shadow.flf $PREFIX/share/figlet/ASCII-Shadow.flf;
 sleep 3
-rm Remo773.flf
+rm dbareh.flf
 fi
-THEADER () 
+DBHEADER () 
 {
 clear;
 echo -e "\033[01;32m
@@ -106,7 +106,7 @@ tput sgr 0
 if [ ${#PROC} -gt 8 ]; then
 	echo -e "\e[1;34m[*] \033[32mKa kyrteng kaba phi ai ka lah jrong palat...\033[0m"
 	echo ""
-	echo -e "\033[32mSngewbha buh \033[33mkyrteng \033[32mtang hapoh 9 dak\033[0m" | pv -qL 10;
+	echo -e "\033[32mSngewbha pyndap\033[33mkyrteng \033[32mtang hapoh 9 dak "khublei shibun"\033[0m" | pv -qL 10;
 	echo ""
 	sleep 4
 	clear
@@ -120,7 +120,7 @@ DBAREH (2021)
 oh-my-zsh users only....
 \033[0m";
 	echo ""
-	echo -e "\e[1;34m \033[32mSngew bha ban Pyndap tang hapoh 9 dak "Khublei Shibun"...\033[0m"
+	echo -e "\e[1;34m \033[32mBAN KYNTAIT IA U BRIEW KAM LONG PAP HA NGA HYNREI BAN KYNTAIT IA U BLEI NGAN DUH KIEI KIEI BAROH NABA KHLEM U JISU NGAM LONG EIEI.\033[0m"
 	echo ""
 else
 	ok=1
