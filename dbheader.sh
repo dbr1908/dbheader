@@ -106,7 +106,7 @@ tput sgr 0
 if [ ${#PROC} -gt 8 ]; then
 	echo -e "\e[1;34m[*] \033[32mKa kyrteng kaba phi ai ka lah jrong palat...\033[0m"
 	echo ""
-	echo -e "\033[32mSngewbha buh da kumwei \033[33m9 \033[32mcharacters Name\033[0m" | pv -qL 10;
+	echo -e "\033[32mSngewbha buh \033[33mkyrteng \033[32mtang hapoh 9 dak\033[0m" | pv -qL 10;
 	echo ""
 	sleep 4
 	clear
