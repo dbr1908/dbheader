@@ -101,12 +101,12 @@ while [ $ok = 0 ];
 do
 	echo ""
 tput setaf 3
-read -p "Sngewbha ai kyrteng : " PROC
+read -p "Sngewbha ai kyrteng ba phi kwah ban buh: " PROC
 tput sgr 0
 if [ ${#PROC} -gt 8 ]; then
-	echo -e "\e[1;34m[*] \033[32mToo long  characters You have input...\033[0m"
+	echo -e "\e[1;34m[*] \033[32mKa kyrteng kaba phi ai ka lah jrong palat...\033[0m"
 	echo ""
-	echo -e "\033[32mPlz enter less than \033[33m9 \033[32mcharacters Name\033[0m" | pv -qL 10;
+	echo -e "\033[32mSngewbha buh da kumwei \033[33m9 \033[32mcharacters Name\033[0m" | pv -qL 10;
 	echo ""
 	sleep 4
 	clear
@@ -120,7 +120,7 @@ DBAREH (2021)
 oh-my-zsh users only....
 \033[0m";
 	echo ""
-	echo -e "\e[1;34m \033[32mSngew bha ban Pyndap tang hapoh 9 dak...\033[0m"
+	echo -e "\e[1;34m \033[32mSngew bha ban Pyndap tang hapoh 9 dak "Khublei Shibun"...\033[0m"
 	echo ""
 else
 	ok=1
@@ -146,12 +146,12 @@ tput setaf 3
 read -p  "Phi lah tikna ? (y/n) " PROC32
 tput sgr 0
 if [[ ${PROC32} == [Y/y] ]]; then
-	if [ -e $HOME/t-header.txt ]; then
-		rm $HOME/t-header.txt;
+	if [ -e $HOME/dbheader.txt ]; then
+		rm $HOME/dbheader.txt;
 	fi
 
-	if [ -d $HOME/T-Header ]; then
-	cd $HOME/T-Header
+	if [ -d $HOME/dbheader ]; then
+	cd $HOME/dbheader
 	fi
 #if [ -e $HOME/.zshrc ]; then
 #	rm -rf ~/.zshrc
@@ -203,13 +203,13 @@ EOF
 COPY_FILES
 chsh -s zsh;
 else
-	echo -e "\033[32mHope you like my work..\033[0m"
+	echo -e "\033[32mNga Kyrmen Phin sngewbha ia kane..\033[0m"
 fi
 exit
 }
 
 clear;
-echo -e "\033[31m$(figlet DB-Header)\e[0m"
+echo -e "\033[31m$(figlet DB-HEADER)\e[0m"
 echo -e "\e[1;32m
 +----------------------------------*/
 DBAREH : (\e[33m14.4.2021\e[32m)
